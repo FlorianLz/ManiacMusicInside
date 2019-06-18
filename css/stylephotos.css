@@ -1,0 +1,183 @@
+﻿/* Arrière plan de la fenêtre modale */
+.modal1 {
+    display: none; /* Cachée par défaut */
+    position: fixed; /* Reste en place */
+    z-index: 2; /* Reste en haut */
+    padding-top: 30px; /* Localisation de la fenêtre */
+    left: 0;
+    top: 0;
+    width: 100%; /* Pleine largeur */
+    height: 100%; /* Pleine hauteur */
+    overflow: auto; /* Autoriser le scroll si besoin */
+    background-color: rgba(0,0,0,0.9); /* Couleur de fond et opacité */
+}
+
+/* Modal Content (image) */
+.modal-content1 {
+    margin: auto;
+    display: block;
+    height:60%;
+    width:auto;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    margin-top:4%;
+}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top:4%;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Définition pour petits écrans */
+@media only screen and (max-width: 1500px){
+    .modal-content1 {
+        max-height:80%;
+        height:auto;
+        max-width:80%;
+        width:auto;
+        margin-top:60px;
+    }
+    .close{
+        margin-top:40px;
+    }
+}
+.button {
+    background-color: #A4A4A4; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:auto;
+    border-radius:10px;
+}
+.desactive {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input{
+    border-radius:7px;
+}
+
+#conteneurPhoto {
+    display:inline-block;
+    width:100%;
+    
+}
+
+#zoneListeDossiers {
+    width:120px;
+    margin-bottom:15px;
+}
+#zonePhotos {
+    width:auto;
+    height:auto; 
+    overflow:hidden;
+    margin-bottom:35px;
+}
+
+#zoneAffichagePhoto {
+    display:inline-block;
+    width:100%;
+}
+
+#ZonePrincipale{
+    width :90%;
+    /*border-style: solid;*/
+    position :center;
+    margin : auto;
+    margin-top:100px;
+}
+
+#ApercuPhoto:hover {
+    opacity: 0.7;
+}
+#ApercuPhoto {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width:auto;
+    height:auto;
+    max-width:280px;
+    max-height:280px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+#FormulaireContact{
+    width :70%;
+    height:70%;
+    border-style: solid;
+    position :center;
+    margin : auto;
+    margin-top:10px;
+}
+input[name=nom]{
+    width: 48%;
+    margin-top:10px;
+}
+input[name=email]{
+    width: 48%;
+    margin-top:10px;
+}
+input[name=objet]{
+    width: 75%;
+    margin-top:10px;
+}
+input[name=captcha]{
+    width: 50%;
+    margin-top:10px;
+    margin-left:5px;
+    margin-bottom:10px;
+}
+textarea[name=message]{
+    width: 75%;
+    height:100px;
+    margin-top:10px;
+    resize:none;
+}
+.BoutonSelection{
+    font: bold 13px Arial;
+    background: #478bf9;
+    color: #fff;
+    border-radius: 2px;
+    width: 100px;
+    border: none;
+    padding: 6px 0 6px 0;
+    margin-left: 10px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
