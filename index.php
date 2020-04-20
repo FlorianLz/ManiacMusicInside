@@ -11,7 +11,7 @@
       <!-- Material Design Bootstrap CSS -->
       <link href="css/mdb.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
       <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/fontastic.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
